@@ -18,15 +18,15 @@ export default function Candidates() {
           Lidé, které potkáváte každý den – a kteří chtějí pro Nové Město nad
           Metují pracovat naplno.
         </p>
-        <div className="mt-16 grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-4">
+        <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {candidates.map((candidate) => (
             <button
               key={candidate.id}
               type="button"
               onClick={() => setSelectedId(candidate.id)}
-              className="group text-left"
+              className="group rounded-2xl bg-neutral-50 p-4 text-left shadow-md ring-1 ring-ink/10 transition-shadow hover:shadow-xl"
             >
-              <div className="overflow-hidden rounded-2xl shadow-lg">
+              <div className="overflow-hidden rounded-xl">
                 <img
                   src={candidate.photo}
                   alt={candidate.name}
