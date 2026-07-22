@@ -29,38 +29,36 @@ export default function CandidateModal({
       role="presentation"
     >
       <div
-        className="max-h-[90vh] w-full max-w-2xl overflow-hidden rounded-2xl bg-white shadow-2xl"
+        className="relative max-h-[90vh] w-full max-w-2xl overflow-hidden rounded-2xl bg-white shadow-2xl"
         role="dialog"
         aria-modal="true"
         aria-labelledby="candidate-modal-title"
         onClick={(event) => event.stopPropagation()}
       >
+        <button
+          type="button"
+          onClick={onClose}
+          aria-label="Zavřít"
+          className="absolute top-4 right-4 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-ink shadow-md transition-transform hover:scale-105"
+        >
+          <svg
+            className="h-6 w-6"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2.5"
+            strokeLinecap="round"
+            aria-hidden="true"
+          >
+            <path d="M6 6l12 12M18 6L6 18" />
+          </svg>
+        </button>
         <div className="max-h-[90vh] overflow-y-auto">
-          <div className="relative">
-            <img
-              src={candidate.photo}
-              alt={candidate.name}
-              className="h-64 w-full object-cover sm:h-80"
-            />
-            <button
-              type="button"
-              onClick={onClose}
-              aria-label="Zavřít"
-              className="absolute top-4 right-4 flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-ink shadow-md transition-transform hover:scale-105"
-            >
-              <svg
-                className="h-6 w-6"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2.5"
-                strokeLinecap="round"
-                aria-hidden="true"
-              >
-                <path d="M6 6l12 12M18 6L6 18" />
-              </svg>
-            </button>
-          </div>
+          <img
+            src={candidate.photo}
+            alt={candidate.name}
+            className="h-64 w-full object-cover sm:h-80"
+          />
           <div className="p-6 sm:p-8">
             <h3
               id="candidate-modal-title"
