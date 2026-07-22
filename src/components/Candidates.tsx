@@ -1,6 +1,13 @@
+import { useState } from 'react'
 import { candidates } from '../data/candidates'
+import CandidateModal from './CandidateModal'
 
 export default function Candidates() {
+  const [selectedId, setSelectedId] = useState<string | null>(null)
+  const selectedCandidate = candidates.find(
+    (candidate) => candidate.id === selectedId,
+  )
+
   return (
     <section id="kandidati" className="scroll-mt-16 bg-white py-20">
       <div className="mx-auto max-w-6xl px-4">
@@ -11,37 +18,38 @@ export default function Candidates() {
           Lidé, které potkáváte každý den – a kteří chtějí pro Nové Město nad
           Metují pracovat naplno.
         </p>
-        <div className="mt-16 space-y-20">
-          {candidates.map((candidate, index) => (
-            <article
+        <div className="mt-16 grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-4">
+          {candidates.map((candidate) => (
+            <button
               key={candidate.id}
-              id={candidate.id}
-              className={`flex flex-col items-center gap-10 lg:items-start ${
-                index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
-              }`}
+              type="button"
+              onClick={() => setSelectedId(candidate.id)}
+              className="group text-left"
             >
-              <img
-                src={candidate.photo}
-                alt={candidate.name}
-                className="w-full max-w-sm rounded-2xl shadow-xl"
-              />
-              <div className="flex-1">
-                <h3 className="text-2xl font-black text-ink sm:text-3xl">
-                  {candidate.name}
-                </h3>
-                <p className="mt-1 inline-block rounded-full bg-brand px-4 py-1 text-sm font-bold text-ink">
-                  {candidate.role}
-                </p>
-                <div className="mt-6 space-y-4 text-neutral-700">
-                  {candidate.bio.map((paragraph) => (
-                    <p key={paragraph.slice(0, 40)}>{paragraph}</p>
-                  ))}
-                </div>
+              <div className="overflow-hidden rounded-2xl shadow-lg">
+                <img
+                  src={candidate.photo}
+                  alt={candidate.name}
+                  className="aspect-3/4 w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
               </div>
-            </article>
+              <h3 className="mt-3 text-lg font-black text-ink">
+                {candidate.name}
+              </h3>
+              <p className="mt-1 text-sm font-medium text-neutral-600">
+                {candidate.role}
+              </p>
+            </button>
           ))}
         </div>
       </div>
+
+      {selectedCandidate && (
+        <CandidateModal
+          candidate={selectedCandidate}
+          onClose={() => setSelectedId(null)}
+        />
+      )}
     </section>
   )
 }
