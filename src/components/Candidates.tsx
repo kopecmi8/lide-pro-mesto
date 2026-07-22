@@ -24,7 +24,7 @@ export default function Candidates() {
               key={candidate.id}
               type="button"
               onClick={() => setSelectedId(candidate.id)}
-              className="group rounded-2xl bg-neutral-50 p-4 text-left shadow-md ring-1 ring-ink/10 transition-shadow hover:shadow-xl"
+              className="group flex flex-col rounded-2xl bg-neutral-50 p-4 text-left shadow-md ring-1 ring-ink/10 transition-shadow hover:shadow-xl"
             >
               <div className="overflow-hidden rounded-xl">
                 <img
@@ -36,7 +36,7 @@ export default function Candidates() {
               <h3 className="mt-3 text-lg font-black text-ink">
                 {candidate.name}
               </h3>
-              <p className="mt-1 text-sm font-medium text-neutral-600">
+              <p className="mt-1 line-clamp-2 min-h-10 text-sm font-medium text-neutral-600">
                 {candidate.role}
               </p>
             </button>
