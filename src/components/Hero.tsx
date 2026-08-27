@@ -1,5 +1,5 @@
 import cover from '../assets/cover.jpg'
-import logo from '../assets/logo.jpg'
+import logo from '../assets/logo.svg'
 
 export default function Hero() {
   return (
