@@ -57,7 +57,7 @@ export default function CandidateModal({
           <img
             src={candidate.photo}
             alt={candidate.name}
-            className="h-64 w-full object-cover sm:h-80"
+            className="h-64 w-full object-cover object-top sm:h-80"
           />
           <div className="p-6 sm:p-8">
             <h3
