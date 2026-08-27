@@ -21,9 +21,9 @@ export const programItems: ProgramItem[] = [
     title: 'Doprava',
     icon: '🚌',
     points: [
-      'Budeme aktivně prosazovat dostavbu obchvatu města, aby kamiony konečně zmizely z centra.',
-      'Zklidníme dopravu v okolí škol a přidáme bezpečné přechody a chodníky.',
-      'Zlepšíme parkování v centru i na sídlištích a podpoříme rozvoj cyklostezek.',
+      'Podpoříme rekonstrukci autobusového nádraží a rozvoj celé oblasti Rychty.',
+      'Zaměříme se na zlepšení stavu komunikací a chodníků ve městě i v přilehlých čtvrtích.',
+      'Budeme dbát na kvalitní a dostupnou veřejnou dopravu pro všechny generace.',
     ],
   },
   {

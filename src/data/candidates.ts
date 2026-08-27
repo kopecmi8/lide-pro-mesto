@@ -23,7 +23,7 @@ export const candidates: Candidate[] = [
     photo: pavelDostalPhoto,
     bio: [
       'Zdravím vás, ahoj,',
-      'zbývají 3 měsíce do komunálních voleb 2026 v Novém Městě nad Metují. Myslím, že je to ten správný čas, kdy vám potřebuji sdělit, že jsem se rozhodl být lídrem nového hnutí a kandidovat na pozici místostarosty města.',
+      'blíží se komunální volby 2026 v Novém Městě nad Metují a přišel čas, kdy vám potřebuji sdělit, že jsem se rozhodl být lídrem nového hnutí a kandidovat na pozici místostarosty města.',
       'Jmenuji se Pavel Dostál, pracuji jako zahradní architekt a vedoucí údržby Státního zámku Ratibořice, jsem zastupitel města, předseda komise životního prostředí a spolupracuji s městským úřadem v oblasti správy městské zeleně.',
       'Funkci v zastupitelstvu plním svědomitě, je to pro mě poslání a služba městu a jeho lidem, tedy vám občanům a obyvatelům. Vždy se snažím ze všech sil, abychom měli silné vedení města, abychom důležité kroky probírali a schvalovali v co největší shodě. Ctím, že v důležitých tématech máme znát názor všech zúčastněných.',
       'Aktivně se zapojuji do malých i velkých projektů, kde se pokouším přispět co nejvíce svou odborností k jejich kvalitní přípravě, realizaci i provozu. Zeptáte-li se, co zahradník může vědět o tom, jak smysluplně řídit město. Odpovím tak, že právě on musí umět dílo dobře naplánovat, vytvořit a hlavně spravovat, aby mu vzkvétalo. Považuji to za silné předpoklady.',
