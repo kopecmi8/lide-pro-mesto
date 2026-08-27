@@ -1,4 +1,4 @@
-import cover from '../assets/cover.jpg'
+import cover from '../assets/cover.svg'
 import logo from '../assets/logo.svg'
 
 export default function Hero() {
