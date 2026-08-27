@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section
       id="uvod"
-      className="relative flex min-h-screen flex-col items-center justify-center bg-brand bg-cover bg-bottom px-4 pt-20 text-center"
+      className="relative flex min-h-screen flex-col items-center justify-center bg-brand bg-cover bg-bottom px-4 pt-20 pb-24 text-center sm:pb-32"
       style={{ backgroundImage: `url(${cover})` }}
     >
       <p className="text-xs font-semibold tracking-wide text-ink sm:text-sm">
@@ -14,7 +14,7 @@ export default function Hero() {
       <img
         src={logo}
         alt="Logo Lidé pro město"
-        className="mt-3 h-40 w-40 rounded-full border-4 border-ink shadow-xl sm:h-56 sm:w-56"
+        className="mt-8 h-40 w-40 rounded-full border-4 border-ink shadow-xl sm:mt-10 sm:h-56 sm:w-56"
       />
       <h1 className="mt-6 max-w-3xl text-4xl font-black tracking-tight text-ink sm:text-6xl">
         Lidé pro město, město pro lidi.
