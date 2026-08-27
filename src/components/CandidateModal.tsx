@@ -59,7 +59,7 @@ export default function CandidateModal({
             alt={candidate.name}
             className="h-72 w-full object-cover object-top sm:h-96"
           />
-          <div className="absolute inset-x-0 bottom-0 bg-white/80 px-6 py-4 shadow-[0_8px_20px_-6px_rgba(0,0,0,0.35)] backdrop-blur-sm sm:px-8">
+          <div className="absolute inset-x-0 bottom-0 bg-white/80 px-6 py-4 shadow-[0_6px_14px_-6px_rgba(0,0,0,0.18)] backdrop-blur-sm sm:px-8">
             <h3
               id="candidate-modal-title"
               className="text-2xl font-black text-ink sm:text-3xl"
