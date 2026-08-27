@@ -11,9 +11,9 @@ export const programItems: ProgramItem[] = [
     title: 'Bydlení',
     icon: '🏠',
     points: [
-      'Připravíme městské pozemky pro novou výstavbu, aby mladé rodiny nemusely z města odcházet.',
-      'Opravíme a rozšíříme městský bytový fond včetně startovacích bytů pro mladé.',
-      'Podpoříme dostupné bydlení pro seniory i lidi pracující ve školství, zdravotnictví a službách.',
+      'Budeme prosazovat rozumnou bytovou politiku, která pomůže udržet mladé rodiny ve městě.',
+      'Zařadíme rozvoj bydlení mezi klíčové investiční priority města.',
+      'Přes bytovou komisi budeme dbát na dostupné nájemní a startovací bydlení.',
     ],
   },
   {
@@ -31,9 +31,9 @@ export const programItems: ProgramItem[] = [
     title: 'Senioři',
     icon: '💛',
     points: [
-      'Udržíme vysokou úroveň pečovatelských a sociálních služeb, na kterou jsme právem hrdí.',
-      'Rozšíříme aktivity pro aktivní seniory – kluby, přednášky, výlety i mezigenerační setkávání.',
-      'Zajistíme dostupnou pomoc v domácnosti, aby lidé mohli co nejdéle zůstat doma, kde to znají.',
+      'Udržíme vysokou úroveň sociálních a pečovatelských služeb, na kterou jsme ve městě právem hrdí.',
+      'Přes sociální komisi budeme dál podporovat a rozvíjet péči o starší spoluobčany.',
+      'Rozšíříme mezigenerační komunitní akce, díky kterým se lidé v každém věku ve městě potkávají.',
     ],
   },
   {
@@ -41,9 +41,9 @@ export const programItems: ProgramItem[] = [
     title: 'Životní prostředí',
     icon: '🌳',
     points: [
-      'Budeme pečovat o městskou zeleň odborně a dlouhodobě – více stromů, květnatých luk a stínu.',
-      'Zadržíme vodu v krajině i ve městě a připravíme město na horka a přívalové deště.',
-      'Podpoříme třídění a předcházení vzniku odpadů a čistotu veřejných prostranství.',
+      'Budeme odborně a dlouhodobě pečovat o městskou zeleň – více stromů, květnatých luk a stínu.',
+      'Zaměříme se na ochranu před povodněmi a péči o řeku Metuji a její okolí.',
+      'Podpoříme zadržování vody v krajině, aby bylo město připravené na sucho i přívalové deště.',
     ],
   },
   {
@@ -51,9 +51,9 @@ export const programItems: ProgramItem[] = [
     title: 'Kultura',
     icon: '🎭',
     points: [
-      'Podpoříme místní spolky, knihovnu a komunitní akce, které drží město pohromadě.',
-      'Oživíme náměstí a veřejný prostor – trhy, koncerty a festivaly pro všechny generace.',
-      'Budeme rozvíjet kulturní dědictví města a jeho jedinečné renesanční centrum.',
+      'Podpoříme místní spolky, knihovnu a komunitní akce, díky kterým žije město i mimo úřední hodiny.',
+      'Prosadíme dlouho odkládanou rekonstrukci městského kina.',
+      'Budeme oživovat náměstí a veřejný prostor – trhy, koncerty a festivaly pro všechny generace.',
     ],
   },
   {
