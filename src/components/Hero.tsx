@@ -19,9 +19,6 @@ export default function Hero() {
       <h1 className="mt-6 max-w-3xl text-4xl font-black tracking-tight text-ink sm:text-6xl">
         Lidé pro město, město pro lidi.
       </h1>
-      <p className="mt-6 max-w-xl text-lg font-semibold text-ink sm:text-xl">
-        Kandidujeme v komunálních volbách v Novém Městě nad Metují.
-      </p>
       <a
         href="#kandidati"
         className="mt-10 rounded-full bg-ink px-8 py-3 text-lg font-bold text-brand shadow-lg transition-transform hover:scale-105"
