@@ -13,14 +13,14 @@ export default function Hero() {
         alt="Logo Lidé pro město"
         className="h-40 w-40 rounded-full border-4 border-ink shadow-xl sm:h-56 sm:w-56"
       />
-      <h1 className="mt-8 max-w-3xl text-4xl font-black tracking-tight text-ink sm:text-6xl">
+      <p className="mt-3 text-xs font-semibold tracking-wide text-ink/60 sm:text-sm">
+        Komunální volby · 9.–10. října 2026 · Nové Město nad Metují
+      </p>
+      <h1 className="mt-6 max-w-3xl text-4xl font-black tracking-tight text-ink sm:text-6xl">
         Lidé pro město, město pro lidi.
       </h1>
       <p className="mt-6 max-w-xl text-lg font-semibold text-ink sm:text-xl">
         Kandidujeme v komunálních volbách v Novém Městě nad Metují.
-      </p>
-      <p className="mt-4 rounded-full bg-ink px-6 py-2 text-base font-bold uppercase tracking-wide text-brand sm:text-lg">
-        Volby se konají v pátek 9. října 2026
       </p>
       <a
         href="#kandidati"

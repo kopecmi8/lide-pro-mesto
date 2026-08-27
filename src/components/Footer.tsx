@@ -13,7 +13,7 @@ export default function Footer() {
           Lidé pro město, město pro lidi.
         </p>
         <p className="max-w-xl text-sm text-neutral-300">
-          Komunální volby 2026 · Nové Město nad Metují · pátek 9. října 2026
+          Komunální volby · 9.–10. října 2026 · Nové Město nad Metují
         </p>
         <a
           href="https://www.facebook.com/profile.php?id=61590778490625"
