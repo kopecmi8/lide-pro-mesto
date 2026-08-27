@@ -29,7 +29,7 @@ export default function CandidateModal({
       role="presentation"
     >
       <div
-        className="relative max-h-[90vh] w-full max-w-2xl overflow-hidden rounded-2xl bg-white shadow-2xl"
+        className="relative flex max-h-[90vh] w-full max-w-2xl flex-col overflow-hidden rounded-2xl bg-white shadow-2xl"
         role="dialog"
         aria-modal="true"
         aria-labelledby="candidate-modal-title"
@@ -53,12 +53,12 @@ export default function CandidateModal({
             <path d="M6 6l12 12M18 6L6 18" />
           </svg>
         </button>
-        <div className="max-h-[90vh] overflow-y-auto">
-          <img
-            src={candidate.photo}
-            alt={candidate.name}
-            className="h-64 w-full object-cover object-top sm:h-80"
-          />
+        <img
+          src={candidate.photo}
+          alt={candidate.name}
+          className="h-64 w-full shrink-0 object-cover object-top sm:h-80"
+        />
+        <div className="min-h-0 flex-1 overflow-y-auto">
           <div className="p-6 sm:p-8">
             <h3
               id="candidate-modal-title"
