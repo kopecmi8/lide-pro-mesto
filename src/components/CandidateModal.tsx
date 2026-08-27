@@ -53,13 +53,13 @@ export default function CandidateModal({
             <path d="M6 6l12 12M18 6L6 18" />
           </svg>
         </button>
-        <img
-          src={candidate.photo}
-          alt={candidate.name}
-          className="h-64 w-full shrink-0 object-cover object-top sm:h-80"
-        />
-        <div className="min-h-0 flex-1 overflow-y-auto">
-          <div className="p-6 sm:p-8">
+        <div className="relative shrink-0">
+          <img
+            src={candidate.photo}
+            alt={candidate.name}
+            className="h-72 w-full object-cover object-top sm:h-96"
+          />
+          <div className="absolute inset-x-0 bottom-0 bg-white/80 px-6 py-4 shadow-[0_8px_20px_-6px_rgba(0,0,0,0.35)] backdrop-blur-sm sm:px-8">
             <h3
               id="candidate-modal-title"
               className="text-2xl font-black text-ink sm:text-3xl"
@@ -69,7 +69,11 @@ export default function CandidateModal({
             <p className="mt-1 inline-block rounded-full bg-brand px-4 py-1 text-sm font-bold text-ink">
               {candidate.role}
             </p>
-            <div className="mt-6 space-y-4 text-neutral-700">
+          </div>
+        </div>
+        <div className="min-h-0 flex-1 overflow-y-auto">
+          <div className="px-6 py-6 sm:px-8 sm:py-8">
+            <div className="space-y-4 text-neutral-700">
               {candidate.bio.map((paragraph) => (
                 <p key={paragraph.slice(0, 40)}>{paragraph}</p>
               ))}
