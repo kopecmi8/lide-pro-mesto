@@ -4,8 +4,13 @@
   --color-brand: #ffe600;
   --color-brand-dark: #e6cf00;
   --color-ink: #111111;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
 }
