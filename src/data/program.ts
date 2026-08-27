@@ -56,4 +56,44 @@ export const programItems: ProgramItem[] = [
       'Budeme rozvíjet kulturní dědictví města a jeho jedinečné renesanční centrum.',
     ],
   },
+  {
+    id: 'skolstvi',
+    title: 'Školství',
+    icon: '🎓',
+    points: [
+      'Budeme školám spolehlivým partnerem – od financování nepedagogických pracovníků po podporu školních psychologů.',
+      'Podpoříme propojení výuky se zájmovými a sportovními aktivitami a obnovíme školní dílny s důrazem na digitální dovednosti pro 21. století.',
+      'Rozšíříme dětská hřiště a aktivity, které dostanou děti od mobilů a sociálních sítí zpět do skutečného světa.',
+    ],
+  },
+  {
+    id: 'sport',
+    title: 'Sport',
+    icon: '⚽',
+    points: [
+      'Umožníme dětem vyzkoušet si víc sportů, než se rozhodnou pro svého favorita, a podpoříme k tomu kvalitní zázemí.',
+      'Prosadíme „třídu zdravého života" jako dostupnou alternativu k výběrovým sportovním třídám.',
+      'Podpoříme sportovní kluby a volnočasové aktivity pro všechny generace, aby měl pohyb ve městě pevné místo.',
+    ],
+  },
+  {
+    id: 'cestovni-ruch',
+    title: 'Cestovní ruch',
+    icon: '🧭',
+    points: [
+      'Budeme rozvíjet turistický potenciál historického centra a jeho jedinečných památek.',
+      'Propojíme turistický ruch s místními spolky, akcemi a produkty regionu.',
+      'Zlepšíme informační servis a zázemí pro návštěvníky, cyklisty i turisty procházející městem.',
+    ],
+  },
+  {
+    id: 'participace',
+    title: 'Participace',
+    icon: '🤝',
+    points: [
+      'Budeme důležitá rozhodnutí komunikovat otevřeně a hledat u nich co největší shodu napříč městem.',
+      'Zapojíme občany do plánování větších projektů, aby se rozhodovalo s vámi, ne jen o vás.',
+      'Chceme obnovit důvěru mezi lidmi ve městě prostřednictvím slušné a věcné komunikace.',
+    ],
+  },
 ]
