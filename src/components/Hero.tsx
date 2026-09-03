@@ -16,7 +16,7 @@ export default function Hero() {
         alt="Logo Lidé pro město"
         className="mt-8 h-20 w-auto sm:mt-10 sm:h-28"
       />
-      <h1 className="mt-6 max-w-3xl text-4xl font-black tracking-tight text-ink sm:text-6xl">
+      <h1 className="mt-6 max-w-3xl text-4xl font-black tracking-tight text-ink sm:text-5xl lg:max-w-none lg:text-6xl lg:whitespace-nowrap">
         Lidé pro město, město pro lidi.
       </h1>
       <a
