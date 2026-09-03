@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section
       id="uvod"
-      className="relative flex min-h-screen flex-col items-center justify-center bg-brand bg-cover bg-bottom px-4 pt-20 pb-24 text-center sm:pb-32"
+      className="relative flex min-h-screen flex-col items-center justify-center bg-brand bg-bottom bg-cover bg-no-repeat px-4 pt-20 pb-24 text-center sm:pb-32 lg:bg-[length:100%_auto]"
       style={{ backgroundImage: `url(${cover})` }}
     >
       <p className="text-xs font-semibold tracking-wide text-ink sm:text-sm">
