@@ -18,14 +18,7 @@ export default function Header() {
           className="flex items-center gap-3"
           onClick={() => setMenuOpen(false)}
         >
-          <img
-            src={logo}
-            alt="Logo Lidé pro město"
-            className="h-12 w-12 rounded-full border-2 border-ink"
-          />
-          <span className="text-lg font-extrabold tracking-tight text-ink">
-            Lidé pro město
-          </span>
+          <img src={logo} alt="Logo Lidé pro město" className="h-8 w-auto" />
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">
