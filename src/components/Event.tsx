@@ -12,9 +12,15 @@ export default function Event() {
         <h2 className="mt-2 text-center text-3xl font-black tracking-tight sm:text-4xl">
           {event.title}
         </h2>
+        <p className="mx-auto mt-6 max-w-2xl text-center text-neutral-300">
+          {event.intro}
+        </p>
         <div className="mx-auto mt-6 flex max-w-xl flex-wrap items-center justify-center gap-3 text-center">
           <span className="rounded-full bg-white/10 px-4 py-2 text-sm font-bold sm:text-base">
             {event.date} · {event.time}
+          </span>
+          <span className="rounded-full bg-white/10 px-4 py-2 text-sm font-bold sm:text-base">
+            📍 {event.location}
           </span>
           <span className="rounded-full bg-brand px-4 py-2 text-sm font-bold text-ink sm:text-base">
             {event.admission}

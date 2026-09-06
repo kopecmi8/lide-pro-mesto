@@ -5,8 +5,11 @@ export interface EventProgramItem {
 
 export const event = {
   title: 'Lidé pro město naživo',
+  intro:
+    'Máte plány na sobotu 12. září? Přijďte za námi do kláštera! Od 9:30 otevíráme běžně nepřístupná místa a věž s úžasným výhledem. Zatímco si děti užijí skákací hrad, my si u dobré kávy rádi poslechneme vaše nápady, jak společně vylepšit naše město.',
   date: 'Sobota 12. září',
   time: 'od 9:30 hodin',
+  location: 'Klášter, Nové Město nad Metují',
   admission: 'Vše zdarma',
   // Po tomto datu (včetně) se sekce na webu automaticky přestane zobrazovat.
   hideFrom: new Date('2026-09-13T00:00:00'),
