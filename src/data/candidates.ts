@@ -10,7 +10,8 @@ import petrNeumannPhoto from '../assets/fb_neumann_p.jpg'
 export interface Candidate {
   id: string
   name: string
-  role: string
+  profession: string
+  politicalRole?: string
   photo: string
   bio: string[]
 }
@@ -19,7 +20,8 @@ export const candidates: Candidate[] = [
   {
     id: 'pavel-dostal',
     name: 'Pavel Dostál',
-    role: 'Lídr kandidátky · kandidát na místostarostu',
+    profession: 'Zahradní architekt',
+    politicalRole: 'Zastupitel města',
     photo: pavelDostalPhoto,
     bio: [
       'Zdravím vás, ahoj,',
@@ -34,7 +36,8 @@ export const candidates: Candidate[] = [
   {
     id: 'ludmila-horakova',
     name: 'Ludmila Horáková',
-    role: 'Zastupitelka · předsedkyně sociální komise',
+    profession: 'Farmaceutická asistentka',
+    politicalRole: 'Zastupitelka města',
     photo: ludmilaHorakovaPhoto,
     bio: [
       'Zdravím vás, dobrý den,',
@@ -49,7 +52,8 @@ export const candidates: Candidate[] = [
   {
     id: 'vilem-maur',
     name: 'Vilém Maur',
-    role: 'Finanční ředitel · bývalý zastupitel a radní',
+    profession: 'Finanční ředitel',
+    politicalRole: 'Bývalý radní a zastupitel města',
     photo: vilemMaurPhoto,
     bio: [
       'Zdravím vás, dobrý den,',
@@ -64,7 +68,7 @@ export const candidates: Candidate[] = [
   {
     id: 'michal-bures',
     name: 'Michal Bureš',
-    role: 'Učitel a trenér mládeže',
+    profession: 'Středoškolský učitel a trenér mládeže',
     photo: michalBuresPhoto,
     bio: [
       'Zdravím vás, ahoj,',
@@ -77,24 +81,25 @@ export const candidates: Candidate[] = [
     ],
   },
   {
-    id: 'jan-neumann',
-    name: 'Jan Neumann',
-    role: 'Podnikatel · zakladatel firmy BILLcom',
-    photo: janNeumannPhoto,
+    id: 'petr-neumann',
+    name: 'Petr Neumann',
+    profession: 'Správce IT',
+    politicalRole: 'Zastupitel města',
+    photo: petrNeumannPhoto,
     bio: [
       'Zdravím vás, dobrý den,',
-      'jmenuji se Jan Neumann a Nové Město nad Metují je mým domovem odjakživa. Žiji tu od narození, vystudoval jsem zdejší průmyslovku a poté ČVUT v Praze. Své vzdělání i zkušenosti jsem se ale rozhodl vrátit zpátky domů: založil jsem tu společnost BILLcom, účetní a IT firmu se sídlem na Husově náměstí. S manželkou, která je dětskou lékařkou tady ve městě, jsme spolu vychovali tři děti.',
-      'Volný čas trávím nejraději venku a v pohybu. Mám rád turistiku, a to i tu (vysoko)horskou – ať už jsou to Alpy, Orlické hory, nebo i naše Klopotovské a Libchyňské údolí. Považuji je za jedinečná místa a leckteré jiné město nám je může závidět. A k dobré náladě mi stačí i obyčejná procházka se psem.',
-      'Do komunální politiky mě přivedlo právě to, co mi na ní dlouhodobě vadí – nekoncepční, až chaotické rozhodování a špatná komunikace mezi zastupiteli. Místo hledání společných řešení se často kopou osobní příkopy, a to vždycky na úkor města. Přesně proto kandiduji za Lidé pro Město – skupinu lidí, které spojuje podobný, hodnotový pohled na rozhodování i na další rozvoj Nového Města.',
-      'V životě se řídím třemi zásadami: pravdou, spravedlností a komunikací. Věřím, že důležitý není jen cíl, ale i cesta k němu. A právě odvaha otevřeně vykomunikovat i odlišné názory je to, co mi v naší místní politice nejvíc chybí.',
-      'Bydlím na Podskalí, kousek od řeky Metuje, a co se děje kolem ní, mi není lhostejné: ochrana před povodněmi, čistota i každodenní péče o okolí řeky. Stejně tak mě zajímá běžný život v Podskalí: doprava, opravy a drobnosti, které dělají naši čtvrť příjemnou k životu. A samozřejmě celé město – v duchu hesla „dnes pro tebe, zítra pro mne".',
-      'Pojďte do toho se mnou. Pojďme z radnice znovu udělat místo, kde se spolu normálně mluví a rozhoduje se s rozvahou – pro Nové Město a pro lidi, kteří v něm žijí.',
+      'jmenuji se Petr Neumann, Nové Město nad Metují je mým domovem. Žiji celý svůj život právě tady. Naše rodina je s městem spjata už po několik generací. Vystudoval jsem strojírenství, profesní cesta mě však zavedla do oblasti informačních technologií. Více než třicet let pracuji v IT a posledních osmnáct let působím jako manažer informačního systému ve společnosti KAMAT. Jsem zastupitelem města, členem politické strany KDU-ČSL a aktuálně předsedou její místní organizace.',
+      'Ve vedení města zastupuji své spoluobčany nepřetržitě od roku 1998. Letos se budu ucházet o Vaši důvěru již poosmé. Každého mandátu si velmi vážím a nikdy jsem jej nepovažoval za samozřejmost. Do politiky mě přivedla snaha aktivně se podílet na rozvoji města. Vždy jsem věřil, že pokud chce člověk něco změnit k lepšímu, měl by být ochoten převzít i část odpovědnosti. Nové Město nad Metují považuji za jedno z nejkrásnějších měst v republice, jeho potenciál si ale zaslouží víc.',
+      'Chci se zaměřit na zlepšení stavu komunikací, chodníků a veřejných prostor jako je například autobusové nádraží na Rychtě. Podporuji život v centru města a rozumnou bytovou politiku, která zde pomůže udržet mladé rodiny.',
+      'Za Lidé pro Město kandiduji proto, že s ostatními sdílím podobné hodnoty a představu o budoucnosti města – spojuje nás snaha řešit problémy věcně, odpovědně a s rozvahou. Za téměř třicet let práce v zastupitelstvu jsem nikdy nesliboval nemožné. Nabízím zkušenosti, odpovědnost a ochotu dál pracovat pro město, které mám rád. Snažím se dané slovo dodržet a věci dotahovat do konce.',
+      'Pojďte do toho se mnou. Doprava a veřejný prostor v Novém Městě nad Metují si zaslouží mnohem lepší řešení. Chci se o to spolu s vámi zasadit.',
     ],
   },
   {
     id: 'josef-hylsky',
     name: 'Josef Hylský',
-    role: 'Učitel matematiky a fyziky · bývalý zastupitel',
+    profession: 'Středoškolský učitel',
+    politicalRole: 'Bývalý radní a zastupitel města',
     photo: josefHylskyPhoto,
     bio: [
       'Dobrý den, ahoj,',
@@ -109,7 +114,7 @@ export const candidates: Candidate[] = [
   {
     id: 'vaclava-horakova',
     name: 'Václava Horáková',
-    role: 'Kariérová poradkyně · instruktorka lezení',
+    profession: 'Kariérová poradkyně',
     photo: vaclavaHorakovaPhoto,
     bio: [
       'Zdravím vás, ahoj,',
@@ -121,17 +126,19 @@ export const candidates: Candidate[] = [
     ],
   },
   {
-    id: 'petr-neumann',
-    name: 'Petr Neumann',
-    role: 'Zastupitel města · předseda místní KDU-ČSL',
-    photo: petrNeumannPhoto,
+    id: 'jan-neumann',
+    name: 'Jan Neumann',
+    profession: 'Podnikatel',
+    politicalRole: 'Bývalý zastupitel města',
+    photo: janNeumannPhoto,
     bio: [
       'Zdravím vás, dobrý den,',
-      'jmenuji se Petr Neumann, Nové Město nad Metují je mým domovem. Žiji celý svůj život právě tady. Naše rodina je s městem spjata už po několik generací. Vystudoval jsem strojírenství, profesní cesta mě však zavedla do oblasti informačních technologií. Více než třicet let pracuji v IT a posledních osmnáct let působím jako manažer informačního systému ve společnosti KAMAT. Jsem zastupitelem města, členem politické strany KDU-ČSL a aktuálně předsedou její místní organizace.',
-      'Ve vedení města zastupuji své spoluobčany nepřetržitě od roku 1998. Letos se budu ucházet o Vaši důvěru již poosmé. Každého mandátu si velmi vážím a nikdy jsem jej nepovažoval za samozřejmost. Do politiky mě přivedla snaha aktivně se podílet na rozvoji města. Vždy jsem věřil, že pokud chce člověk něco změnit k lepšímu, měl by být ochoten převzít i část odpovědnosti. Nové Město nad Metují považuji za jedno z nejkrásnějších měst v republice, jeho potenciál si ale zaslouží víc.',
-      'Chci se zaměřit na zlepšení stavu komunikací, chodníků a veřejných prostor jako je například autobusové nádraží na Rychtě. Podporuji život v centru města a rozumnou bytovou politiku, která zde pomůže udržet mladé rodiny.',
-      'Za Lidé pro Město kandiduji proto, že s ostatními sdílím podobné hodnoty a představu o budoucnosti města – spojuje nás snaha řešit problémy věcně, odpovědně a s rozvahou. Za téměř třicet let práce v zastupitelstvu jsem nikdy nesliboval nemožné. Nabízím zkušenosti, odpovědnost a ochotu dál pracovat pro město, které mám rád. Snažím se dané slovo dodržet a věci dotahovat do konce.',
-      'Pojďte do toho se mnou. Doprava a veřejný prostor v Novém Městě nad Metují si zaslouží mnohem lepší řešení. Chci se o to spolu s vámi zasadit.',
+      'jmenuji se Jan Neumann a Nové Město nad Metují je mým domovem odjakživa. Žiji tu od narození, vystudoval jsem zdejší průmyslovku a poté ČVUT v Praze. Své vzdělání i zkušenosti jsem se ale rozhodl vrátit zpátky domů: založil jsem tu společnost BILLcom, účetní a IT firmu se sídlem na Husově náměstí. S manželkou, která je dětskou lékařkou tady ve městě, jsme spolu vychovali tři děti.',
+      'Volný čas trávím nejraději venku a v pohybu. Mám rád turistiku, a to i tu (vysoko)horskou – ať už jsou to Alpy, Orlické hory, nebo i naše Klopotovské a Libchyňské údolí. Považuji je za jedinečná místa a leckteré jiné město nám je může závidět. A k dobré náladě mi stačí i obyčejná procházka se psem.',
+      'Do komunální politiky mě přivedlo právě to, co mi na ní dlouhodobě vadí – nekoncepční, až chaotické rozhodování a špatná komunikace mezi zastupiteli. Místo hledání společných řešení se často kopou osobní příkopy, a to vždycky na úkor města. Přesně proto kandiduji za Lidé pro Město – skupinu lidí, které spojuje podobný, hodnotový pohled na rozhodování i na další rozvoj Nového Města.',
+      'V životě se řídím třemi zásadami: pravdou, spravedlností a komunikací. Věřím, že důležitý není jen cíl, ale i cesta k němu. A právě odvaha otevřeně vykomunikovat i odlišné názory je to, co mi v naší místní politice nejvíc chybí.',
+      'Bydlím na Podskalí, kousek od řeky Metuje, a co se děje kolem ní, mi není lhostejné: ochrana před povodněmi, čistota i každodenní péče o okolí řeky. Stejně tak mě zajímá běžný život v Podskalí: doprava, opravy a drobnosti, které dělají naši čtvrť příjemnou k životu. A samozřejmě celé město – v duchu hesla „dnes pro tebe, zítra pro mne".',
+      'Pojďte do toho se mnou. Pojďme z radnice znovu udělat místo, kde se spolu normálně mluví a rozhoduje se s rozvahou – pro Nové Město a pro lidi, kteří v něm žijí.',
     ],
   },
 ]

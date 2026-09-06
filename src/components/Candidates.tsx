@@ -36,8 +36,18 @@ export default function Candidates() {
               <h3 className="mt-3 text-lg font-black text-ink">
                 {candidate.name}
               </h3>
-              <p className="mt-1 line-clamp-2 min-h-10 text-sm font-medium text-neutral-600">
-                {candidate.role}
+              <p className="mt-1 min-h-10 text-sm">
+                <span className="font-bold text-ink">
+                  {candidate.profession}
+                </span>
+                {candidate.politicalRole && (
+                  <>
+                    <br />
+                    <span className="font-medium text-neutral-500">
+                      {candidate.politicalRole}
+                    </span>
+                  </>
+                )}
               </p>
             </button>
           ))}
