@@ -1,14 +1,16 @@
 import { useState } from 'react'
 import logo from '../assets/logo.svg'
-
-const navLinks = [
-  { href: '#kandidati', label: 'Kandidáti' },
-  { href: '#program', label: 'Program' },
-  { href: '#kontakt', label: 'Kontakt' },
-]
+import { isEventActive } from '../data/event'
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
+
+  const navLinks = [
+    { href: '#kandidati', label: 'Kandidáti' },
+    { href: '#program', label: 'Program' },
+    ...(isEventActive() ? [{ href: '#akce', label: 'Akce' }] : []),
+    { href: '#kontakt', label: 'Kontakt' },
+  ]
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 bg-brand/95 shadow-md backdrop-blur">
