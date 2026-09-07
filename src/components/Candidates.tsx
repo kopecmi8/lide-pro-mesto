@@ -14,7 +14,7 @@ export default function Candidates() {
         <h2 className="text-center text-3xl font-black tracking-tight text-ink sm:text-4xl">
           Naši kandidáti
         </h2>
-        <p className="mx-auto mt-4 max-w-2xl text-center text-lg text-neutral-600">
+        <p className="mx-auto mt-4 max-w-2xl text-center text-lg text-neutral-600 lg:max-w-none lg:whitespace-nowrap">
           Lidé, které potkáváte každý den – a kteří chtějí pro Nové Město nad
           Metují pracovat naplno.
         </p>
