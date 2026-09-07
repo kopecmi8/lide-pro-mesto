@@ -1,7 +1,10 @@
 import cover from '../assets/cover.svg'
 import logo from '../assets/logo.svg'
+import { isEventActive } from '../data/event'
 
 export default function Hero() {
+  const eventActive = isEventActive()
+
   return (
     <section
       id="uvod"
@@ -19,12 +22,22 @@ export default function Hero() {
       <h1 className="mt-6 max-w-3xl text-4xl font-black tracking-tight text-ink sm:text-5xl lg:max-w-none lg:text-6xl lg:whitespace-nowrap">
         Lidé pro město, město pro lidi.
       </h1>
-      <a
-        href="#kandidati"
-        className="mt-10 rounded-full bg-ink px-8 py-3 text-lg font-bold text-brand shadow-lg transition-transform hover:scale-105"
-      >
-        Poznejte nás
-      </a>
+      <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+        <a
+          href="#kandidati"
+          className="rounded-full bg-ink px-8 py-3 text-lg font-bold text-brand shadow-lg transition-transform hover:scale-105"
+        >
+          Poznejte nás
+        </a>
+        {eventActive && (
+          <a
+            href="#akce"
+            className="rounded-full border-2 border-ink bg-brand px-8 py-3 text-lg font-bold text-ink shadow-lg transition-transform hover:scale-105"
+          >
+            Pozvánka na akci
+          </a>
+        )}
+      </div>
     </section>
   )
 }
