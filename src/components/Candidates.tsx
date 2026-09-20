@@ -26,12 +26,15 @@ export default function Candidates() {
               onClick={() => setSelectedId(candidate.id)}
               className="group flex cursor-pointer flex-col rounded-2xl bg-neutral-50 p-4 text-left shadow-md ring-1 ring-ink/10 transition-shadow hover:shadow-xl"
             >
-              <div className="overflow-hidden rounded-xl">
+              <div className="relative overflow-hidden rounded-xl">
                 <img
                   src={candidate.photo}
                   alt={`${candidate.name} – ${candidate.profession}`}
                   className="aspect-3/4 w-full object-cover object-top transition-transform duration-300 group-hover:scale-105"
                 />
+                <span className="absolute top-2 right-2 flex h-8 w-8 items-center justify-center rounded-full bg-brand text-sm font-black text-ink shadow-md">
+                  {candidate.order}
+                </span>
               </div>
               <h3 className="mt-3 text-lg font-black text-ink">
                 {candidate.name}
@@ -59,12 +62,15 @@ export default function Candidates() {
         <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
           {otherCandidates.map((candidate) => (
             <div key={candidate.id} className="flex flex-col items-center text-center">
-              <div className="w-full overflow-hidden rounded-xl">
+              <div className="relative w-full overflow-hidden rounded-xl">
                 <img
                   src={candidate.photo}
                   alt={`${candidate.name} – ${candidate.profession}`}
                   className="aspect-square w-full object-cover object-top"
                 />
+                <span className="absolute top-1.5 right-1.5 flex h-6 w-6 items-center justify-center rounded-full bg-brand text-xs font-black text-ink shadow-md">
+                  {candidate.order}
+                </span>
               </div>
               <h4 className="mt-2 text-sm font-bold text-ink">
                 {candidate.name}

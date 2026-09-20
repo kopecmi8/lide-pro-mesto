@@ -23,6 +23,7 @@ import juliusKahanecPhoto from '../assets/lpm_kahanec.jpg'
 
 export interface Candidate {
   id: string
+  order: number
   name: string
   profession: string
   politicalRole?: string
@@ -32,6 +33,7 @@ export interface Candidate {
 
 export interface SimpleCandidate {
   id: string
+  order: number
   name: string
   profession: string
   photo: string
@@ -40,6 +42,7 @@ export interface SimpleCandidate {
 export const candidates: Candidate[] = [
   {
     id: 'pavel-dostal',
+    order: 1,
     name: 'Pavel Dostál',
     profession: 'Zahradní architekt',
     politicalRole: 'Zastupitel města',
@@ -55,23 +58,8 @@ export const candidates: Candidate[] = [
     ],
   },
   {
-    id: 'ludmila-horakova',
-    name: 'Ludmila Horáková',
-    profession: 'Farmaceutická asistentka',
-    politicalRole: 'Zastupitelka města',
-    photo: ludmilaHorakovaPhoto,
-    bio: [
-      'Zdravím vás, dobrý den,',
-      'jmenuji se Ludmila Horáková, pocházím z Vrchovin a celý život pracuji v lékárně. Ve svém volném čase se již více než 40 let věnuji práci v místní knihovně, kde pravidelně organizuji komunitní akce. Pro děti Noc s Andersenem, výlety nebo exkurze do Škoda Auto Kvasiny.',
-      'Do komunální politiky se vracím už popáté. Za sebou mám tři volební období, kdy jsem souběžně s mateřskou dovolenou naplno věnovala svůj čas práci zastupitelky, hlavně jako předsedkyně osadního výboru Vrchoviny. Tehdy jsem musela zvolnit – chtěla jsem být naplno pro své dcery, což se s tehdejším vytížením nedalo skloubit. Ale slíbila jsem si, že až vyrostou, vrátím se. A vrátila jsem se.',
-      'Dnes jsem členkou zastupitelstva a politické strany KDU-ČSL, působím v bytové komisi, jsem též předsedkyní sociální komise a členkou osadního výboru Vrchoviny. K příjemným povinnostem patří role oddávající. Práce v komunální politice pro mě má smysl – je to služba lidem, kterým chci naslouchat a pomáhat.',
-      'Ze své praxe mám velmi blízko ke starší generaci. V našem městě máme služby pro starší spoluobčany na velmi vysoké úrovni. Chci dále udržet laťku takto vysoko a budu neustále podporovat způsob, jakým to děláme.',
-      'Co mě žene dál? Z rodiny mám zakódováno jedno pravidlo: pomáhej druhým. Chci, aby Nové Město nad Metují bylo místem pro život všech generací, kde je lidem skutečně nasloucháno.',
-      'Pojďte do toho se mnou. Pojďme se společně postarat o ty, kteří naše město vybudovali.',
-    ],
-  },
-  {
     id: 'vilem-maur',
+    order: 2,
     name: 'Vilém Maur',
     profession: 'Finanční ředitel',
     politicalRole: 'Bývalý radní a zastupitel města',
@@ -87,7 +75,25 @@ export const candidates: Candidate[] = [
     ],
   },
   {
+    id: 'ludmila-horakova',
+    order: 3,
+    name: 'Ludmila Horáková',
+    profession: 'Farmaceutická asistentka',
+    politicalRole: 'Zastupitelka města',
+    photo: ludmilaHorakovaPhoto,
+    bio: [
+      'Zdravím vás, dobrý den,',
+      'jmenuji se Ludmila Horáková, pocházím z Vrchovin a celý život pracuji v lékárně. Ve svém volném čase se již více než 40 let věnuji práci v místní knihovně, kde pravidelně organizuji komunitní akce. Pro děti Noc s Andersenem, výlety nebo exkurze do Škoda Auto Kvasiny.',
+      'Do komunální politiky se vracím už popáté. Za sebou mám tři volební období, kdy jsem souběžně s mateřskou dovolenou naplno věnovala svůj čas práci zastupitelky, hlavně jako předsedkyně osadního výboru Vrchoviny. Tehdy jsem musela zvolnit – chtěla jsem být naplno pro své dcery, což se s tehdejším vytížením nedalo skloubit. Ale slíbila jsem si, že až vyrostou, vrátím se. A vrátila jsem se.',
+      'Dnes jsem členkou zastupitelstva a politické strany KDU-ČSL, působím v bytové komisi, jsem též předsedkyní sociální komise a členkou osadního výboru Vrchoviny. K příjemným povinnostem patří role oddávající. Práce v komunální politice pro mě má smysl – je to služba lidem, kterým chci naslouchat a pomáhat.',
+      'Ze své praxe mám velmi blízko ke starší generaci. V našem městě máme služby pro starší spoluobčany na velmi vysoké úrovni. Chci dále udržet laťku takto vysoko a budu neustále podporovat způsob, jakým to děláme.',
+      'Co mě žene dál? Z rodiny mám zakódováno jedno pravidlo: pomáhej druhým. Chci, aby Nové Město nad Metují bylo místem pro život všech generací, kde je lidem skutečně nasloucháno.',
+      'Pojďte do toho se mnou. Pojďme se společně postarat o ty, kteří naše město vybudovali.',
+    ],
+  },
+  {
     id: 'michal-bures',
+    order: 4,
     name: 'Michal Bureš',
     profession: 'Středoškolský učitel a trenér mládeže',
     photo: michalBuresPhoto,
@@ -103,6 +109,7 @@ export const candidates: Candidate[] = [
   },
   {
     id: 'petr-neumann',
+    order: 5,
     name: 'Petr Neumann',
     profession: 'Správce IT',
     politicalRole: 'Zastupitel města',
@@ -118,6 +125,7 @@ export const candidates: Candidate[] = [
   },
   {
     id: 'josef-hylsky',
+    order: 6,
     name: 'Josef Hylský',
     profession: 'Středoškolský učitel',
     politicalRole: 'Bývalý radní a zastupitel města',
@@ -134,6 +142,7 @@ export const candidates: Candidate[] = [
   },
   {
     id: 'vaclava-horakova',
+    order: 7,
     name: 'Václava Horáková',
     profession: 'Kariérová poradkyně',
     photo: vaclavaHorakovaPhoto,
@@ -148,6 +157,7 @@ export const candidates: Candidate[] = [
   },
   {
     id: 'jan-neumann',
+    order: 8,
     name: 'Jan Neumann',
     profession: 'Podnikatel',
     politicalRole: 'Bývalý zastupitel města',
@@ -167,78 +177,91 @@ export const candidates: Candidate[] = [
 export const otherCandidates: SimpleCandidate[] = [
   {
     id: 'denisa-konvalinova',
+    order: 9,
     name: 'Denisa Konvalinová',
     profession: 'Zaměstnankyně MěÚ',
     photo: denisaKonvalinovaPhoto,
   },
   {
     id: 'vojteska-horakova',
+    order: 10,
     name: 'Vojtěška Horáková',
     profession: 'Studentka právnické fakulty',
     photo: vojteskaHorakovaPhoto,
   },
   {
     id: 'jan-neumann-msc',
+    order: 11,
     name: 'Jan Neumann',
     profession: 'Finanční ředitel',
     photo: janNeumannMscPhoto,
   },
   {
     id: 'lenka-cizkova',
+    order: 12,
     name: 'Lenka Čížková',
     profession: 'Laborantka mikrobiologie AV',
     photo: lenkaCizkovaPhoto,
   },
   {
     id: 'jan-soucek',
+    order: 13,
     name: 'Jan Souček',
     profession: 'Speciální pedagog',
     photo: janSoucekPhoto,
   },
   {
     id: 'johana-schrotter',
+    order: 14,
     name: 'Johana Schrötter',
     profession: 'Analytická chemička',
     photo: johanaSchrotterPhoto,
   },
   {
     id: 'pavel-fanta',
+    order: 15,
     name: 'Pavel Fanta',
     profession: 'Podnikatel – spedice',
     photo: pavelFantaPhoto,
   },
   {
     id: 'helena-havrdova',
+    order: 16,
     name: 'Helena Havrdová',
     profession: 'Asistentka pedagoga',
     photo: helenaHavrdovaPhoto,
   },
   {
     id: 'anna-jirmanova',
+    order: 17,
     name: 'Anna Jirmanová',
     profession: 'Studentka vysoké školy',
     photo: annaJirmanovaPhoto,
   },
   {
     id: 'jiri-kryda',
+    order: 18,
     name: 'Jiří Krýda',
     profession: 'Podnikatel – reality',
     photo: jiriKrydaPhoto,
   },
   {
     id: 'pavel-kmonicek',
+    order: 19,
     name: 'Pavel Kmoníček',
     profession: 'Elektrotechnik',
     photo: pavelKmonicekPhoto,
   },
   {
     id: 'pavel-lastovic',
+    order: 20,
     name: 'Pavel Laštovic',
     profession: 'Prodejce mobilních telefonů',
     photo: pavelLastovicPhoto,
   },
   {
     id: 'julius-kahanec',
+    order: 21,
     name: 'Julius Kahanec',
     profession: 'Sladovník a vedoucí AT',
     photo: juliusKahanecPhoto,

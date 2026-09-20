@@ -59,6 +59,9 @@ export default function CandidateModal({
             alt={`${candidate.name} – ${candidate.profession}`}
             className="h-72 w-full object-cover object-top sm:h-96"
           />
+          <span className="absolute top-4 left-4 flex h-10 w-10 items-center justify-center rounded-full bg-brand text-base font-black text-ink shadow-md">
+            {candidate.order}
+          </span>
           <div className="absolute inset-x-0 bottom-0 bg-white/80 px-6 py-4 shadow-[0_6px_14px_-6px_rgba(0,0,0,0.18)] backdrop-blur-sm sm:px-8">
             <h3
               id="candidate-modal-title"
