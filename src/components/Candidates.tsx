@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { candidates } from '../data/candidates'
+import { candidates, otherCandidates } from '../data/candidates'
 import CandidateModal from './CandidateModal'
 
 export default function Candidates() {
@@ -50,6 +50,27 @@ export default function Candidates() {
                 )}
               </p>
             </button>
+          ))}
+        </div>
+
+        <h3 className="mt-20 text-center text-2xl font-black tracking-tight text-ink sm:text-3xl">
+          Další kandidáti na listině
+        </h3>
+        <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+          {otherCandidates.map((candidate) => (
+            <div key={candidate.id} className="flex flex-col items-center text-center">
+              <div className="w-full overflow-hidden rounded-xl">
+                <img
+                  src={candidate.photo}
+                  alt={candidate.name}
+                  className="aspect-square w-full object-cover object-top"
+                />
+              </div>
+              <h4 className="mt-2 text-sm font-bold text-ink">
+                {candidate.name}
+              </h4>
+              <p className="text-xs text-neutral-500">{candidate.profession}</p>
+            </div>
           ))}
         </div>
       </div>

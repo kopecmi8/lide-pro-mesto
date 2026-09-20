@@ -7,6 +7,20 @@ import josefHylskyPhoto from '../assets/fb_hylsky.jpg'
 import vaclavaHorakovaPhoto from '../assets/fb_horakova_v.jpg'
 import petrNeumannPhoto from '../assets/fb_neumann_p.jpg'
 
+import denisaKonvalinovaPhoto from '../assets/lpm_konvalinova.jpg'
+import vojteskaHorakovaPhoto from '../assets/lpm_horakova_vo.jpg'
+import janNeumannMscPhoto from '../assets/lpm_neumann_jr.jpg'
+import lenkaCizkovaPhoto from '../assets/lpm_cizkova.jpg'
+import janSoucekPhoto from '../assets/lpm_soucek.jpg'
+import johanaSchrotterPhoto from '../assets/lpm_schrotterova.jpg'
+import pavelFantaPhoto from '../assets/lpm_fanta.jpg'
+import helenaHavrdovaPhoto from '../assets/lpm_havrdova.jpg'
+import annaJirmanovaPhoto from '../assets/lpm_jirmanova.jpg'
+import jiriKrydaPhoto from '../assets/lpm_kryda.jpg'
+import pavelKmonicekPhoto from '../assets/lpm_kmonicek.jpg'
+import pavelLastovicPhoto from '../assets/lpm_lastovic.jpg'
+import juliusKahanecPhoto from '../assets/lpm_kahanec.jpg'
+
 export interface Candidate {
   id: string
   name: string
@@ -14,6 +28,13 @@ export interface Candidate {
   politicalRole?: string
   photo: string
   bio: string[]
+}
+
+export interface SimpleCandidate {
+  id: string
+  name: string
+  profession: string
+  photo: string
 }
 
 export const candidates: Candidate[] = [
@@ -140,5 +161,86 @@ export const candidates: Candidate[] = [
       'Bydlím na Podskalí, kousek od řeky Metuje, a co se děje kolem ní, mi není lhostejné: ochrana před povodněmi, čistota i každodenní péče o okolí řeky. Stejně tak mě zajímá běžný život v Podskalí: doprava, opravy a drobnosti, které dělají naši čtvrť příjemnou k životu. A samozřejmě celé město – v duchu hesla „dnes pro tebe, zítra pro mne".',
       'Pojďte do toho se mnou. Pojďme z radnice znovu udělat místo, kde se spolu normálně mluví a rozhoduje se s rozvahou – pro Nové Město a pro lidi, kteří v něm žijí.',
     ],
+  },
+]
+
+export const otherCandidates: SimpleCandidate[] = [
+  {
+    id: 'denisa-konvalinova',
+    name: 'Denisa Konvalinová',
+    profession: 'Zaměstnankyně MěÚ',
+    photo: denisaKonvalinovaPhoto,
+  },
+  {
+    id: 'vojteska-horakova',
+    name: 'Vojtěška Horáková',
+    profession: 'Studentka právnické fakulty',
+    photo: vojteskaHorakovaPhoto,
+  },
+  {
+    id: 'jan-neumann-msc',
+    name: 'Jan Neumann',
+    profession: 'Finanční ředitel',
+    photo: janNeumannMscPhoto,
+  },
+  {
+    id: 'lenka-cizkova',
+    name: 'Lenka Čížková',
+    profession: 'Laborantka mikrobiologie AV',
+    photo: lenkaCizkovaPhoto,
+  },
+  {
+    id: 'jan-soucek',
+    name: 'Jan Souček',
+    profession: 'Speciální pedagog',
+    photo: janSoucekPhoto,
+  },
+  {
+    id: 'johana-schrotter',
+    name: 'Johana Schrötter',
+    profession: 'Analytická chemička',
+    photo: johanaSchrotterPhoto,
+  },
+  {
+    id: 'pavel-fanta',
+    name: 'Pavel Fanta',
+    profession: 'Podnikatel – spedice',
+    photo: pavelFantaPhoto,
+  },
+  {
+    id: 'helena-havrdova',
+    name: 'Helena Havrdová',
+    profession: 'Asistentka pedagoga',
+    photo: helenaHavrdovaPhoto,
+  },
+  {
+    id: 'anna-jirmanova',
+    name: 'Anna Jirmanová',
+    profession: 'Studentka vysoké školy',
+    photo: annaJirmanovaPhoto,
+  },
+  {
+    id: 'jiri-kryda',
+    name: 'Jiří Krýda',
+    profession: 'Podnikatel – reality',
+    photo: jiriKrydaPhoto,
+  },
+  {
+    id: 'pavel-kmonicek',
+    name: 'Pavel Kmoníček',
+    profession: 'Elektrotechnik',
+    photo: pavelKmonicekPhoto,
+  },
+  {
+    id: 'pavel-lastovic',
+    name: 'Pavel Laštovic',
+    profession: 'Prodejce mobilních telefonů',
+    photo: pavelLastovicPhoto,
+  },
+  {
+    id: 'julius-kahanec',
+    name: 'Julius Kahanec',
+    profession: 'Sladovník a vedoucí AT',
+    photo: juliusKahanecPhoto,
   },
 ]
