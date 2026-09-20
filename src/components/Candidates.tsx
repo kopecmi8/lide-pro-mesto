@@ -29,7 +29,7 @@ export default function Candidates() {
               <div className="overflow-hidden rounded-xl">
                 <img
                   src={candidate.photo}
-                  alt={candidate.name}
+                  alt={`${candidate.name} – ${candidate.profession}`}
                   className="aspect-3/4 w-full object-cover object-top transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
@@ -62,7 +62,7 @@ export default function Candidates() {
               <div className="w-full overflow-hidden rounded-xl">
                 <img
                   src={candidate.photo}
-                  alt={candidate.name}
+                  alt={`${candidate.name} – ${candidate.profession}`}
                   className="aspect-square w-full object-cover object-top"
                 />
               </div>
