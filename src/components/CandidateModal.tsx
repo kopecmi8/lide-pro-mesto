@@ -56,7 +56,7 @@ export default function CandidateModal({
         <div className="relative shrink-0">
           <img
             src={candidate.photo}
-            alt={candidate.name}
+            alt={`${candidate.name} – ${candidate.profession}`}
             className="h-72 w-full object-cover object-top sm:h-96"
           />
           <div className="absolute inset-x-0 bottom-0 bg-white/80 px-6 py-4 shadow-[0_6px_14px_-6px_rgba(0,0,0,0.18)] backdrop-blur-sm sm:px-8">
