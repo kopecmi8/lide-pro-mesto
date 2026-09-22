@@ -1,10 +1,35 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { articles } from '../data/articles'
 import ArticleModal from './ArticleModal'
 
+const ARTICLE_HASH_PREFIX = '#aktuality/'
+
+function readArticleIdFromHash(): string | null {
+  const { hash } = window.location
+  if (!hash.startsWith(ARTICLE_HASH_PREFIX)) return null
+  const id = decodeURIComponent(hash.slice(ARTICLE_HASH_PREFIX.length))
+  return articles.some((article) => article.id === id) ? id : null
+}
+
 export default function Articles() {
-  const [selectedId, setSelectedId] = useState<string | null>(null)
+  const [selectedId, setSelectedId] = useState<string | null>(() =>
+    readArticleIdFromHash(),
+  )
   const selectedArticle = articles.find((article) => article.id === selectedId)
+
+  useEffect(() => {
+    const syncFromHash = () => setSelectedId(readArticleIdFromHash())
+    window.addEventListener('hashchange', syncFromHash)
+    return () => window.removeEventListener('hashchange', syncFromHash)
+  }, [])
+
+  const openArticle = (id: string) => {
+    window.location.hash = `${ARTICLE_HASH_PREFIX}${encodeURIComponent(id)}`
+  }
+
+  const closeArticle = () => {
+    window.location.hash = 'aktuality'
+  }
 
   return (
     <section id="aktuality" className="scroll-mt-16 bg-white py-20">
@@ -20,7 +45,7 @@ export default function Articles() {
             <button
               key={article.id}
               type="button"
-              onClick={() => setSelectedId(article.id)}
+              onClick={() => openArticle(article.id)}
               className="group flex cursor-pointer flex-col overflow-hidden rounded-2xl bg-neutral-50 text-left shadow-md ring-1 ring-ink/10 transition-shadow hover:shadow-xl"
             >
               <div className="relative overflow-hidden">
@@ -62,10 +87,7 @@ export default function Articles() {
       </div>
 
       {selectedArticle && (
-        <ArticleModal
-          article={selectedArticle}
-          onClose={() => setSelectedId(null)}
-        />
+        <ArticleModal article={selectedArticle} onClose={closeArticle} />
       )}
     </section>
   )
