@@ -50,14 +50,12 @@ export default function ArticleModal({ article, onClose }: ArticleModalProps) {
             <path d="M6 6l12 12M18 6L6 18" />
           </svg>
         </button>
-        <div className="shrink-0">
+        <div className="min-h-0 flex-1 overflow-y-auto">
           <img
             src={article.imageDetail}
             alt={article.title}
             className="aspect-4/3 w-full object-cover sm:aspect-video"
           />
-        </div>
-        <div className="min-h-0 flex-1 overflow-y-auto">
           <div className="px-6 py-6 sm:px-8 sm:py-8">
             <p className="text-xs font-bold tracking-wide text-neutral-500 uppercase">
               {article.date}
