@@ -8,6 +8,7 @@ export default function Header() {
   const navLinks = [
     { href: '#kandidati', label: 'Kandidáti' },
     { href: '#program', label: 'Program' },
+    { href: '#aktuality', label: 'Aktuality' },
     ...(isEventActive() ? [{ href: '#akce', label: 'Akce' }] : []),
     { href: '#kontakt', label: 'Kontakt' },
   ]
