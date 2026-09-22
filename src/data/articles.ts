@@ -17,7 +17,7 @@ export const articles: Article[] = [
     id: 'koupaliste-2027',
     title: 'Koupaliště stojí, co bude dál?',
     kicker: 'Jaký bude ostrý provoz koupaliště?',
-    date: '22. září 2026',
+    date: '20. září 2026',
     image: koupalisteThumb,
     imageDetail: koupalisteDetail,
     excerpt:
