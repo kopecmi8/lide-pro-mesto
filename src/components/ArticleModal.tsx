@@ -66,13 +66,25 @@ export default function ArticleModal({ article, onClose }: ArticleModalProps) {
             >
               {article.title}
             </h3>
-            <p className="mt-4 text-sm font-black tracking-wide text-ink uppercase">
-              {article.kicker}
-            </p>
+            {article.kicker && (
+              <p className="mt-4 text-sm font-black tracking-wide text-ink uppercase">
+                {article.kicker}
+              </p>
+            )}
             <div className="mt-4 space-y-4 text-neutral-700">
-              {article.body.map((paragraph) => (
-                <p key={paragraph.slice(0, 40)}>{paragraph}</p>
-              ))}
+              {article.body.map((paragraph) => {
+                if (paragraph.startsWith('## ')) {
+                  return (
+                    <h4
+                      key={paragraph.slice(0, 40)}
+                      className="pt-2 text-lg font-black text-ink"
+                    >
+                      {paragraph.slice(3)}
+                    </h4>
+                  )
+                }
+                return <p key={paragraph.slice(0, 40)}>{paragraph}</p>
+              })}
             </div>
           </div>
         </div>
