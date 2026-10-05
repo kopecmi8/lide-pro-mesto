@@ -54,7 +54,7 @@ export default function ArticleModal({ article, onClose }: ArticleModalProps) {
           <img
             src={article.imageDetail}
             alt={article.title}
-            className="aspect-4/3 w-full object-cover sm:aspect-video"
+            className="block h-auto w-full"
           />
           <div className="px-6 py-6 sm:px-8 sm:py-8">
             <p className="text-xs font-bold tracking-wide text-neutral-500 uppercase">
