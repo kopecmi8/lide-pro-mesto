@@ -12,6 +12,8 @@ export interface Article {
   date: string
   image: string
   imageDetail: string
+  /** Fotku v detailu oříznout do širšího poměru; bez toho se grafika ukáže celá. */
+  cropDetailImage?: boolean
   excerpt: string
   /** Položky začínající "## " se v detailu vykreslí jako mezititulek. */
   body: string[]
@@ -65,6 +67,7 @@ export const articles: Article[] = [
     date: '20. září 2026',
     image: koupalisteThumb,
     imageDetail: koupalisteDetail,
+    cropDetailImage: true,
     excerpt:
       'Co vás čeká na koupališti v roce 2027? Bude na novou sezónu areál kompletně hotový? Kolik stojí provoz a údržba? Jak se bude sekat trávník? Dělá problémy doprava?',
     body: [
