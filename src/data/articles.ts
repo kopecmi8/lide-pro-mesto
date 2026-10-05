@@ -2,6 +2,8 @@ import koupalisteThumb from '../assets/koupaliste-thumb.jpg'
 import koupalisteDetail from '../assets/koupaliste-detail.jpg'
 import vizeThumb from '../assets/vize-thumb.jpg'
 import vizeDetail from '../assets/vize-detail.jpg'
+import mujHlasThumb from '../assets/muj-hlas-thumb.jpg'
+import mujHlasDetail from '../assets/muj-hlas-detail.jpg'
 
 export interface Article {
   id: string
@@ -16,6 +18,27 @@ export interface Article {
 }
 
 export const articles: Article[] = [
+  {
+    id: 'prijdte-k-volbam',
+    title: 'Přijďte k volbám – každý hlas se počítá!',
+    date: '4. října 2026',
+    image: mujHlasThumb,
+    imageDetail: mujHlasDetail,
+    excerpt:
+      'Již za týden, tedy 9. a 10. října 2026 vás čekají komunální volby do zastupitelstva Nového Města nad Metují. Tato volba vám dává možnost ovlivnit, kdo bude ve městě rozhodovat o každodenních i dlouhodobých záležitostech po dobu následujících čtyř let.',
+    body: [
+      'Již za týden, tedy 9. a 10. října 2026 vás čekají komunální volby do zastupitelstva Nového Města nad Metují. Tato volba vám dává možnost ovlivnit, kdo bude ve městě rozhodovat o každodenních i dlouhodobých záležitostech po dobu následujících čtyř let.',
+      '## Systém',
+      'Celkem můžete v našem městě vybrat 21 zástupců. V letošním roce ze 6 kandidujících stran a uskupení. Hlasovat můžete pro jednu kandidátní stranu, pro jednotlivé kandidáty z různých stran, nebo můžete oba způsoby kombinovat. Hlasy se následně přepočítávají na tzv. mandáty v zastupitelstvu pomocí poměrného volebního systému. Zvoleni jsou ti kandidáti, kterým podle výsledků připadnou mandáty. Pozor, nevolíte přímo starostu města! Ten vzejde až z řad nově zvolených zastupitelů, obdobně jako místostarosta a dalších 5 členů rady města.',
+      '## Účast',
+      'V roce 2022 mohlo svůj hlas odevzdat 7 619 zapsaných voličů. Učinilo to však pouze 3 614 z nich (47,43 %). V roce 2018 přišlo k volbám z možných 7 827 celkem 4 300 voličů (54,94 %). V porovnání posledních dvou voleb je to tedy výrazný pokles v zájmu zvolit své zástupce. O vedení města pro roky 2022-2026 rozhodlo výrazně méně než polovina voličů. Hlasování ovlivnilo o téměř sedm stovek voličů méně než ve volbách předešlých. Navíc výsledkem byl fakt, že zvolené zastupitelstvo bylo ve většině zásadních témat rozděleno v poměru 11:10. Město čekala významná rozhodnutí a nálada mezi zastupiteli nebyla přátelská. Mimo jiné šlo zejména o jednu z největších investic města, kterou bylo rozporuplné rozhodnutí o vybudování biotopového koupaliště, nakonec za 125 milionů korun.',
+      '## Můj hlas',
+      'Mnoho z vás si jistě položilo otázku, proč zrovna můj hlas má rozhodnout. Právě proto, že každý hlas má váhu, obzvláště při těsném výsledku a nízké volební účasti. V naší historii máme několik příkladů, kdy rozhodovaly opravdu jednotky. Konkrétně u našeho uskupení (dříve KDU-ČSL) měl jeden kandidát štěstí, když se do zastupitelstva města dostal o pouhé 4 hlasy. Naopak v druhém případě se daný kandidát (hříčkou osudu či voličů ten samý) ještě těsnějším rozdílem 3 hlasů do vedení města nedostal.',
+      '## Šance',
+      'Na malém městě se často volí známé osobnosti. Hnutí a strany vám ovšem dávají návod skrytý v pořadí kandidátů. Sestavením kandidátní listiny v podstatě dokládají, kdo z jejich řad má zájem, prostor, chuť a odvahu usilovat o dané pozice v zastupitelstvu města, radě města, či dokonce na uvolněných postech místostarosty a starosty města. Je veřejným tajemstvím, že z celkového počtu 126 kandidátů mají pouze jednotky zájemců opravdu reálnou možnost vykonávat mandát opravdu zodpovědně a plnohodnotně. Toto je pro vedení města zásadní, a proto to mějte při volbě na paměti. Včetně úsudku, jaké osobnosti jsou schopné nalézt společnou řeč, aby městu skutečně pomohly a ideálně dlouhodobě spolupracovaly v jeho vedení.',
+      '## Přijďte volit, má to smysl, ať máme město, kde rozhoduje skutečná většina!',
+    ],
+  },
   {
     id: 'nase-vize',
     title: 'Naše vize?',
