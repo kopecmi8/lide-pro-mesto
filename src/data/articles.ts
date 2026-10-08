@@ -4,6 +4,8 @@ import vizeThumb from '../assets/vize-thumb.jpg'
 import vizeDetail from '../assets/vize-detail.jpg'
 import mujHlasThumb from '../assets/muj-hlas-thumb.jpg'
 import mujHlasDetail from '../assets/muj-hlas-detail.jpg'
+import spolupraceThumb from '../assets/spoluprace-thumb.jpg'
+import spolupraceDetail from '../assets/spoluprace-detail.jpg'
 
 export interface Article {
   id: string
@@ -20,6 +22,39 @@ export interface Article {
 }
 
 export const articles: Article[] = [
+  {
+    id: 'spoluprace-je-zaklad',
+    title: 'Spolupráce je základ!',
+    date: '8. října 2026',
+    image: spolupraceThumb,
+    imageDetail: spolupraceDetail,
+    excerpt:
+      'Ano, Jirásek to vidí. Když se chce, tak to jde. Na první pohled je samozřejmě patrné, že do „jeho“ parku bylo investováno mnoho milionů korun.',
+    body: [
+      'Ano, Jirásek to vidí. Když se chce, tak to jde.',
+      'Na první pohled je samozřejmě patrné, že do „jeho“ parku bylo investováno mnoho milionů korun. Peníze získané převážně z dotace, ale z velké části také z městské pokladny. Všechna čest těm, kteří dokázali získat vnější podporu a zároveň se rozhodli pro tak radikální proměnu tohoto místa. Logicky to vyvolalo i řadu nesouhlasných názorů. Nakonec je však rozhodně dobře, že se do toho město pustilo. Dnes práce finišují a brzy se můžete těšit na téměř zcela nový prostor s moderním vybavením pro pestré vyžití návštěvníků všech věkových kategorií.',
+      'Velká čísla a zaklínadlo „dotace“ jsou jedna věc. Svědomitá a dlouhodobá práce, a především spolupráce, je věc druhá. Možná ještě zásadnější.',
+      'Na konkrétním příkladu této akce mohu ze svého osobního angažování snadno ukázat, jak moc je u podobného projektu důležitá nejen první myšlenka, ale také součinnost po celou dobu jeho přípravy a realizace. A velmi žádoucí je pokračovat i při jeho zdárném otevření a následném provozu.',
+      'Nic z toho není samozřejmostí. Je enormně důležité být pro projektanty i stavební firmu silným, kvalifikovaným a jednotným partnerem, aby se projekt i samotné dílo podařily.',
+      'Alois Jirásek, tedy lépe řečeno jeho busta, byla dlouhá léta schovaná za hustým křovím a již nefunkčním tenisovým kurtem. Park měl velmi specifickou a intimní atmosféru, byl v podstatě odříznutý od okolí. Ovšem nejen kamenné já spisovatele, ale i návštěvníci byli často svědky bujení různých živlů, zejména po setmění.',
+      'Proto je dobře, že se park otevřel a již brzy se stane plnohodnotnou, provázanou a velmi moderně vybavenou součástí veřejného prostoru v okolí sokolovny i celého našeho města.',
+      'Až zavítáte do parku, jistě si všimnete, že pan Jirásek má o poznání veselejší náladu. Jeho socha bude nově zahalena do záhonu květin a všude kolem porostou nové stromy. Ty ve zpevněných plochách dokonce z velice promyšleného a nejmoderněji připraveného výsadbového prostoru.',
+      'Pokud spisovatel nemůže, vy se po parku projdete po kompletně obnovených mlatových pěšinách a po opravených schodech dorazíte třeba až na mnohem lépe přístupnou Klosovu vyhlídku.',
+      'Skutečným detailem a důkazem svědomité práce všech zúčastněných je znovuvyužití místních materiálů. Například opuky vytěžené v areálu bývalých kasáren, která posloužila pro stavbu zdi. Částečně se využila také žulová dlažba z původních městských silnic. Ta nejen ušetřila náklady na materiál, ale v precizním detailu zároveň pomůže bránit vyšlapávání trávníku na křižovatkách cest.',
+      'Díky důmyslnému nasvětlení prostoru, které značně zvýší bezpečnost místa, budete moci park využívat bez obav i ve večerních hodinách.',
+      'Děti budou mít velikou radost z množství herních prvků z přírodních materiálů, rozesetých po celé ploše. Jestli je tedy občas nevyleká nějaké to divoké prase.',
+      'Dospěláky zaměstná příprava masa na velkorysém grilu u piknikového posezení. Starší spoluobčané rozhodně uvítají množství pohodlných laviček. Možná si rádi zahrají šachy, anebo sáhnou po knize do objemné knihovny, která se stala příjemnou ozdobou již tak krásného a velmi netradičního objektu veřejných toalet.',
+      'Z tohoto roztomilého detailu by měl snad i samotný literát velkou radost. Každopádně je jedním z promyšlených záměrů celého projektu. Když Jiráskovy sady, tak čtení a knihy.',
+      'Jednoduše se toto místo podařilo přetvořit v neskutečně pestrý prostor, který bude ozdobou města.',
+      'Osobně jsem moc rád, že byla uvedena v život moje původní myšlenka na revitalizaci parku. O takovém rozsahu jsem tehdy jen snil. Nutně jsem zamýšlel, že obnova bude postupná, v několika etapách. Tak, abychom ji byli schopni financovat z našeho rozpočtu po částech, protože tehdy nebyly na obzoru žádné dotace, které by její realizaci mohly podpořit.',
+      'Jsem vděčný, že se podařilo nalézt společnou řeč a na přípravě i rekonstrukci parku spolupracovat s různým vedením města napříč volebními obdobími.',
+      'Je to krásný příklad toho, jak můžeme spojit síly a přinést občanům města něco speciálního a zároveň dlouhodobě fungujícího. A každý k tomu přispěl svým výrazným dílem.',
+      'Aniž bych chtěl kohokoli podceňovat, bez široké podpory a shody, vzájemného respektu a především spolupráce by takové dílo nevzniklo.',
+      'Díky tedy patří všem, kteří přidali ruku k dílu a dokázali se domluvit.',
+      'Spolupráce je základ. A Jiráskovy sady jsou krásným důkazem, že když se chce, tak to jde.',
+      'Pavel Dostál, Lidé pro Město',
+    ],
+  },
   {
     id: 'prijdte-k-volbam',
     title: 'Přijďte k volbám – každý hlas se počítá!',
